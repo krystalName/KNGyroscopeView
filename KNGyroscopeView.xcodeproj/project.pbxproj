@@ -13,6 +13,8 @@
 		C23D46611FD93DF500AD3F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23D46601FD93DF500AD3F0A /* Assets.xcassets */; };
 		C23D46641FD93DF500AD3F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23D46621FD93DF500AD3F0A /* LaunchScreen.storyboard */; };
 		C23D46671FD93DF600AD3F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23D46661FD93DF600AD3F0A /* main.m */; };
+		C23D46701FDA33DE00AD3F0A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D466F1FDA33DE00AD3F0A /* CoreMotion.framework */; };
+		C23D46731FDA340900AD3F0A /* KNGyroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = C23D46721FDA340900AD3F0A /* KNGyroscope.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		C23D46631FD93DF500AD3F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C23D46651FD93DF600AD3F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C23D46661FD93DF600AD3F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23D466F1FDA33DE00AD3F0A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C23D46711FDA340900AD3F0A /* KNGyroscope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNGyroscope.h; sourceTree = "<group>"; };
+		C23D46721FDA340900AD3F0A /* KNGyroscope.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNGyroscope.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23D46701FDA33DE00AD3F0A /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				C23D46561FD93DF500AD3F0A /* KNGyroscopeView */,
 				C23D46551FD93DF500AD3F0A /* Products */,
+				C23D466E1FDA33DE00AD3F0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,7 @@
 		C23D46561FD93DF500AD3F0A /* KNGyroscopeView */ = {
 			isa = PBXGroup;
 			children = (
+				C23D466D1FDA33BB00AD3F0A /* KNGyroscopeImageView */,
 				C23D46571FD93DF500AD3F0A /* AppDelegate.h */,
 				C23D46581FD93DF500AD3F0A /* AppDelegate.m */,
 				C23D465A1FD93DF500AD3F0A /* ViewController.h */,
@@ -69,6 +77,23 @@
 				C23D46661FD93DF600AD3F0A /* main.m */,
 			);
 			path = KNGyroscopeView;
+			sourceTree = "<group>";
+		};
+		C23D466D1FDA33BB00AD3F0A /* KNGyroscopeImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C23D46711FDA340900AD3F0A /* KNGyroscope.h */,
+				C23D46721FDA340900AD3F0A /* KNGyroscope.m */,
+			);
+			path = KNGyroscopeImageView;
+			sourceTree = "<group>";
+		};
+		C23D466E1FDA33DE00AD3F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C23D466F1FDA33DE00AD3F0A /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23D46731FDA340900AD3F0A /* KNGyroscope.m in Sources */,
 				C23D465C1FD93DF500AD3F0A /* ViewController.m in Sources */,
 				C23D46671FD93DF600AD3F0A /* main.m in Sources */,
 				C23D46591FD93DF500AD3F0A /* AppDelegate.m in Sources */,

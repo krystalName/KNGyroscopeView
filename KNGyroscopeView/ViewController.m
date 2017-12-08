@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "KNGyroscopeImageView.h"
+
 
 @interface ViewController ()
+
+//陀螺仪View
+@property(nonatomic, strong)KNGyroscopeImageView *imageView;
 
 @end
 
@@ -16,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _imageView = [[KNGyroscopeImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    _imageView.image = [UIImage imageNamed:@"1"];
+    
+    //开始动画
+    [_imageView startAnimate];
+    
+    [self.view addSubview:_imageView];
 }
 
 

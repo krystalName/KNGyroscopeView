@@ -44,7 +44,7 @@
 -(void)startAnimate
 {
     float scrollSpeed = (_myImageView.frame.size.width - self.frame.size.width)/2/SPEED;
-    [KNGyroscope sharedGyroscope].timeInterval = 1;
+    [KNGyroscope sharedGyroscope].timeInterval = 0.05;
     
     //这里调用陀螺仪开始的方法
     [[KNGyroscope sharedGyroscope]startGyroscopeBlock:^(float x, float y, float z) {
@@ -60,9 +60,9 @@
                 _myImageView.center = CGPointMake(interpretedXOffset, _myImageView.center.y);
             }
             
-            if (_myImageView.frame.origin.x >0)
+            if (_myImageView.frame.origin.x > 0)
             {
-                _myImageView.frame = CGRectMake(0, _myImageView.frame.origin.y, _myImageView.frame.size.width, _myImageView.frame.size.height);
+                _myImageView.frame = CGRectMake(0, _myImageView.frame.origin.y,_myImageView.frame.size.width, _myImageView.frame.size.height);
             }
             if (_myImageView.frame.origin.x < self.frame.size.width - _myImageView.frame.size.width)
             {

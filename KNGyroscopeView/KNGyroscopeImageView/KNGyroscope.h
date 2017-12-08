@@ -40,7 +40,7 @@
 
  @param complete 重力感应block,返回XYZ
  */
--(void)stratAccelerometerBlock:(void(^)(float x,float y,float z))complete;
+-(void)startAccelerometerBlock:(void(^)(float x,float y,float z))complete;
 
 
 /**
@@ -48,7 +48,7 @@
 
  @param complete 陀螺仪block,返回XYZ
  */
--(void)stratGyroscopeBlock:(void(^)(float x,float y,float z))complete;
+-(void)startGyroscopeBlock:(void(^)(float x,float y,float z))complete;
 
 ///停止
 -(void)stop;

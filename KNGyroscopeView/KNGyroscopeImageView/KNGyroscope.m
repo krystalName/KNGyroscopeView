@@ -53,7 +53,7 @@
 
 
 //开始重力感应
--(void)stratAccelerometerBlock:(void (^)(float, float, float))complete
+-(void)startAccelerometerBlock:(void (^)(float, float, float))complete
 {
     
     //如果有重力感应
@@ -123,7 +123,7 @@
 
 
 //开始陀螺仪
--(void)stratGyroscopeBlock:(void (^)(float, float, float))complete{
+-(void)startGyroscopeBlock:(void (^)(float, float, float))complete{
     
     //判断有无重力陀螺仪
     if (_manger.deviceMotionAvailable) {

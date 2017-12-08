@@ -9,5 +9,15 @@
 #import "KNGyroscope.h"
 
 @implementation KNGyroscope
+{
+    NSOperationQueue *_queue;
+    ///重力加速block
+    void(^_startAccelerationOfGravityBlock)(float x,float y,float z);
+    ///重力感应block
+    void(^_stratAccelerometerBlock)(float x,float y,float z);
+    ///陀螺仪block
+    void(^_stratGyroscopeBlock)(float x,float y,float z);
+}
+
 
 @end

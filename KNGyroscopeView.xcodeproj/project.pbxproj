@@ -15,6 +15,7 @@
 		C23D46671FD93DF600AD3F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23D46661FD93DF600AD3F0A /* main.m */; };
 		C23D46701FDA33DE00AD3F0A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D466F1FDA33DE00AD3F0A /* CoreMotion.framework */; };
 		C23D46731FDA340900AD3F0A /* KNGyroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = C23D46721FDA340900AD3F0A /* KNGyroscope.m */; };
+		C23D46761FDA44CA00AD3F0A /* KNGyroscopeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C23D46751FDA44CA00AD3F0A /* KNGyroscopeImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		C23D466F1FDA33DE00AD3F0A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		C23D46711FDA340900AD3F0A /* KNGyroscope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNGyroscope.h; sourceTree = "<group>"; };
 		C23D46721FDA340900AD3F0A /* KNGyroscope.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNGyroscope.m; sourceTree = "<group>"; };
+		C23D46741FDA44CA00AD3F0A /* KNGyroscopeImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNGyroscopeImageView.h; sourceTree = "<group>"; };
+		C23D46751FDA44CA00AD3F0A /* KNGyroscopeImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNGyroscopeImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				C23D46711FDA340900AD3F0A /* KNGyroscope.h */,
 				C23D46721FDA340900AD3F0A /* KNGyroscope.m */,
+				C23D46741FDA44CA00AD3F0A /* KNGyroscopeImageView.h */,
+				C23D46751FDA44CA00AD3F0A /* KNGyroscopeImageView.m */,
 			);
 			path = KNGyroscopeImageView;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23D46761FDA44CA00AD3F0A /* KNGyroscopeImageView.m in Sources */,
 				C23D46731FDA340900AD3F0A /* KNGyroscope.m in Sources */,
 				C23D465C1FD93DF500AD3F0A /* ViewController.m in Sources */,
 				C23D46671FD93DF600AD3F0A /* main.m in Sources */,

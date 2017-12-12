@@ -47,7 +47,7 @@
     [KNGyroscope sharedGyroscope].timeInterval = 0.05;
     
     //这里调用陀螺仪开始的方法
-    [[KNGyroscope sharedGyroscope]startGyroscopeBlock:^(float x, float y, float z) {
+    [[KNGyroscope sharedGyroscope] startGyroscopeBlock:^(float x, float y, float z) {
         
         [UIView animateKeyframesWithDuration:0.3 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeDiscrete animations:^{
             
